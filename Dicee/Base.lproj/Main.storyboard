@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollMeButtonPresses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLX-or-AIk"/>
+                                    <action selector="rollMeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEy-Sm-X0K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +53,6 @@
                     <connections>
                         <outlet property="diceImageViewLeft" destination="xDD-AT-tav" id="Okr-A3-jj8"/>
                         <outlet property="diceImageViewRight" destination="dBG-T4-Q2F" id="aji-mh-3m3"/>
-                        <outlet property="rollMeBtn" destination="Zq4-Ap-TqS" id="z76-SE-SN9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
