@@ -23,6 +23,14 @@ class ViewController: UIViewController {
     
     }
     
+    /*
+    *  Motion Detection for updating dice images
+    */
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        updateDiceImages();
+    }
+    
+    //updates dice images
     func updateDiceImages(){
         
         diceValueLeft = Int(arc4random_uniform(6));
@@ -40,7 +48,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        updateDiceImages();
+        updateDiceImages(); // change dice images on app load
     }
 
     override func didReceiveMemoryWarning() {
