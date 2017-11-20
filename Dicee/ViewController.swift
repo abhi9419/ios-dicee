@@ -19,6 +19,12 @@ class ViewController: UIViewController {
     
     @IBAction func rollMeBtnPressed(_ sender: UIButton) {
         
+        updateDiceImages();
+    
+    }
+    
+    func updateDiceImages(){
+        
         diceValueLeft = Int(arc4random_uniform(6));
         diceValueRight = Int(arc4random_uniform(6));
         
@@ -28,14 +34,13 @@ class ViewController: UIViewController {
         diceImageViewLeft.image = UIImage(named:diceImagesArray[diceValueLeft]);
         diceImageViewRight.image = UIImage(named:diceImagesArray[diceValueRight]);
         
-        
-        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateDiceImages();
     }
 
     override func didReceiveMemoryWarning() {
